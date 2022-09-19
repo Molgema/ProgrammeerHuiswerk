@@ -1,4 +1,4 @@
-//A program that determines whether the integer given by the user is a prime number or not  - Last Edited 13/9/22
+//A program that determines whether the integer given by the user is a prime number or not  - Last Edited 19/9/22
 //Niels Boer
 //s1183510
 //E1A
@@ -6,21 +6,31 @@
 #include <stdio.h>
 
 int main(void) {
-	int input; //interger input user
+	int number, flag = 0; //initializing number for user input and flag for determining if number is prime number
+	int counter = 2; //initializing counter for while loop 
 
-	printf("Enter an integer greater than 1: \n"); //prompt user to enter integer
-	scanf_s("%d", &input); //read integer input from user
+	printf("Enter any number to check if it is a prime number: \n"); //ask user to enter number
+	scanf_s("%d", &number); //read number into the variable number
 
-	//determining if integer is a prime number
-	if (input % input == 0) {
-		if (input % 1 == 0) {
-			printf("%d is a prime number\n", input);
+	//checking for each number between counter and number - 1 if the remainder of dividing number by counter is 0 
+	while (counter < number - 1) {
+		if (number % counter == 0) {
+			flag = 1; 
+		} //end if 
+
+		counter++;
+	}
+
+	//displaying whether number is a prime number or not 
+	if (flag == 0) {
+		if (number >= 2) {
+			printf("%d is a prime number.\n", number);
 		}
-	} //end if 
-	else if (input < 1) {
-		printf("%d is not a prime number\n", input);
-	}
+		else {
+			printf("%d is not a prime number.\n", number);
+		} //end if
+	}	
 	else {
-		printf("%d is not a prime number\n", input); 
-	}
+		printf("%d is not a prime number.\n", number);
+	} //end if 
 } //end main
