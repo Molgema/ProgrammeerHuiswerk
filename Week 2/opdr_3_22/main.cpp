@@ -1,4 +1,4 @@
-//A program that determines whether the integer given by the user is a prime number or not  - Last Edited 19/9/22
+//A program that determines whether the integer given by the user is a prime number or not  - Last Edited 20/9/22
 //Niels Boer
 //s1183510
 //E1A
@@ -13,7 +13,7 @@ int main(void) {
 	scanf_s("%d", &number); //read number into the variable number
 
 	//checking for each number between counter and number - 1 if the remainder of dividing number by counter is 0 
-	while (counter < number - 1) {
+	while (counter <= number - 1) {
 		if (number % counter == 0) {
 			flag = 1; 
 		} //end if 

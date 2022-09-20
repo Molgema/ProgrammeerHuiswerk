@@ -1,4 +1,4 @@
-//A program that determines the largest of ten given inputs by the user  - Last Edited 19/9/22
+//A program that displays table of values for N^1 to N^4 with N from 1 to 10 - Last Edited 20/9/22
 //Niels Boer
 //s1183510
 //E1A
