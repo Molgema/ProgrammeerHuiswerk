@@ -9,7 +9,7 @@ int main(void) {
 	
 	int largest = 256; //initializing largest decimal number we want to display in table of values
 	
-	printf("%7s%13s%17s%16s\n", "Decimal", "Binary", "Octaldecimal", "Hexadecimal"); //displaying heading table
+	printf("%7s%13s%7s%13s\n", "Decimal", "Binary", "Octal", "Hexadecimal"); //displaying heading table
 
 	//displaying decimal, binary, octaldecimal and hexadecimal for each decimal number in table of values
 	for (int decimal = 1; decimal <= largest; decimal++) {
@@ -25,6 +25,6 @@ int main(void) {
 			count *= 10; //simulating adding 0 or 1 in front of the binary number
 		}
 		
-		printf("%7d%13d%17o%16X\n", decimal, bin, decimal, decimal); //displaying decimal, binary, octal and hexadecimal for each iteration
+		printf("%7d%13d%7o%13X\n", decimal, bin, decimal, decimal); //displaying decimal, binary, octal and hexadecimal for each iteration
 	} //end for
 } //end main
