@@ -1,4 +1,4 @@
-//A program that calculates the total charge for the charges of three cars for rental hours less than 72  - Last Edited 27/9/22
+//A program that calculates the total charge for the charges of three cars for rental hours less than 72  - Last Edited 16/10/22
 //Niels Boer
 //s1183510
 //E1A
